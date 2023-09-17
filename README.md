@@ -2,10 +2,7 @@
 
 Mushrooms Classification Web App
 
-Data Set
-~~- Cleaned (convert the letters into numbers) keep a key of the values~~
-~~- Converted into SQLite~~
-~~- API~~
-	~~- Holds the trained data to compare to the input data~~
-- Html web page
-	- JS/CSS/Html
+### Instructions
+- Open terminal to the project folder and run `python Mushroom_API.py`
+- Open second terminal to the `web_app` foler and run `python -m http.server`
+- Open a browser to `http://localhost:8000/index.html`
