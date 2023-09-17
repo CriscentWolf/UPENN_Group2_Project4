@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+  
+<body>
+    <h1>Mushrooms Poisonous or Edible?</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+  
+        <div class="form-instructions">
+            <label for="instructions" id="instructions">
+                Choose the best option for each feature of the mushroom.
+            </label>
+        </div>
+
+        <!-- Cap Shape -->
+        <div class="form-control">
+            <label>
+                Cap Shape:
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="cap-shape-b">
+                <input type="radio"
+                       id="cap-shape-b"
+                       name="cap-shape"
+                       value="0">Bell</input>
+            </label>
+            <label for="cap-shape-c">
+                <input type="radio"
+                       id="cap-shape-c"
+                       name="cap-shape"
+                       value="1">Conical</input>
+            </label>
+            <label for="cap-shape-x">
+                <input type="radio"
+                       id="cap-shape-x"
+                       name="cap-shape"
+                       value="2">Convex</input>
+            </label>
+            <label for="cap-shape-f">
+                <input type="radio"
+                       id="cap-shape-f"
+                       name="cap-shape"
+                       value="3">Flat</input>
+            </label>
+            <label for="cap-shape-k">
+                <input type="radio"
+                       id="cap-shape-k"
+                       name="cap-shape"
+                       value="4">Knobbed</input>
+            </label>
+            <label for="cap-shape-s">
+                <input type="radio"
+                       id="cap-shape-s"
+                       name="cap-shape"
+                       value="5">Sunken</input>
+            </label>
+        </div>
+
+        <!-- Cap Surface -->
+        <div class="form-control">
+            <label>
+                Cap Surface:
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="cap-surface-f">
+                <input type="radio"
+                       id="cap-surface-f"
+                       name="cap-surface"
+                       value="0">Fibrous</input>
+            </label>
+            <label for="cap-surface-g">
+                <input type="radio"
+                       id="cap-surface-g"
+                       name="cap-surface"
+                       value="1">Grooves</input>
+            </label>
+            <label for="cap-surface-y">
+                <input type="radio"
+                       id="cap-surface-y"
+                       name="cap-surface"
+                       value="2">Scaly</input>
+            </label>
+            <label for="cap-surface-s">
+                <input type="radio"
+                       id="cap-surface-s"
+                       name="cap-surface"
+                       value="3">Smooth</input>
+            </label>
+        </div>
+  
+        <!-- Cap Color -->
+        <div class="form-control">
+            <label>
+                Cap Color:
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="cap-color-n">
+                <input type="radio"
+                       id="cap-color-n"
+                       name="cap-color"
+                       value="0">Brown</input>
+            </label>
+            <label for="cap-color-b">
+                <input type="radio"
+                       id="cap-color-b"
+                       name="cap-color"
+                       value="1">Buff</input>
+            </label>
+            <label for="cap-color-c">
+                <input type="radio"
+                       id="cap-color-c"
+                       name="cap-color"
+                       value="2">Cinnamon</input>
+            </label>
+            <label for="cap-color-g">
+                <input type="radio"
+                       id="cap-color-g"
+                       name="cap-color"
+                       value="3">Gray</input>
+            </label>
+            <label for="cap-color-r">
+                <input type="radio"
+                       id="cap-color-r"
+                       name="cap-color"
+                       value="4">Green</input>
+            </label>
+            <label for="cap-color-p">
+                <input type="radio"
+                       id="cap-color-p"
+                       name="cap-color"
+                       value="5">Pink</input>
+            </label>
+            <label for="cap-color-u">
+                <input type="radio"
+                       id="cap-color-u"
+                       name="cap-color"
+                       value="6">Purple</input>
+            </label>
+            <label for="cap-color-e">
+                <input type="radio"
+                       id="cap-color-e"
+                       name="cap-color"
+                       value="7">Red</input>
+            </label>
+            <label for="cap-color-w">
+                <input type="radio"
+                       id="cap-color-w"
+                       name="cap-color"
+                       value="8">White</input>
+            </label>
+            <label for="cap-color-y">
+                <input type="radio"
+                       id="cap-color-y"
+                       name="cap-color"
+                       value="9">Yellow</input>
+            </label>
+        </div>
+
+        <!-- Bruises -->
+        <div class="form-control">
+            <label>
+                Bruises:
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="bruises-f">
+                <input type="radio"
+                       id="bruises-f"
+                       name="bruises"
+                       value="0">False</input>
+            </label>
+            <label for="bruises-t">
+                <input type="radio"
+                       id="bruises-t"
+                       name="bruises"
+                       value="1">True</input>
+            </label>
+        </div>
+
+        <!-- Odor -->
+        <div class="form-control">
+            <label>
+                Odor:
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="odor-a">
+                <input type="radio"
+                       id="odor-a"
+                       name="odor"
+                       value="0">Almond</input>
+            </label>
+            <label for="odor-l">
+                <input type="radio"
+                       id="odor-l"
+                       name="odor"
+                       value="1">Anise</input>
+            </label>
+            <label for="odor-c">
+                <input type="radio"
+                       id="odor-c"
+                       name="odor"
+                       value="2">Creosote</input>
+            </label>
+            <label for="odor-y">
+                <input type="radio"
+                       id="odor-y"
+                       name="odor"
+                       value="3">Fishy</input>
+            </label>
+            <label for="odor-f">
+                <input type="radio"
+                       id="odor-f"
+                       name="odor"
+                       value="4">Foul</input>
+            </label>
+            <label for="odor-m">
+                <input type="radio"
+                       id="odor-m"
+                       name="odor"
+                       value="5">Musty</input>
+            </label>
+            <label for="odor-n">
+                <input type="radio"
+                       id="odor-n"
+                       name="odor"
+                       value="6">None</input>
+            </label>
+            <label for="odor-p">
+                <input type="radio"
+                       id="odor-p"
+                       name="odor"
+                       value="7">Pungent</input>
+            </label>
+            <label for="odor-s">
+                <input type="radio"
+                       id="odor-s"
+                       name="odor"
+                       value="8">Spicy</input>
+            </label>
+        </div>
+
+        <!-- Gill Attachment -->
+        <div class="form-control">
+            <label>
+                Gill Attachment:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="gill-attachment-a">
+                <input type="radio"
+                        id="gill-attachment-a"
+                        name="gill-attachment"
+                        value="0">Attached</input>
+            </label>
+            <label for="gill-attachment-d">
+                <input type="radio"
+                        id="gill-attachment-d"
+                        name="gill-attachment"
+                        value="1">Descending</input>
+            </label>
+            <label for="gill-attachment-f">
+                <input type="radio"
+                        id="gill-attachment-f"
+                        name="gill-attachment"
+                        value="2">Free</input>
+            </label>
+            <label for="gill-attachment-n">
+                <input type="radio"
+                        id="gill-attachment-n"
+                        name="gill-attachment"
+                        value="3">Notched</input>
+            </label>
+        </div>
+
+        <!-- Gill Spacing -->
+        <div class="form-control">
+            <label>
+                Gill Spacing:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="gill-spacing-c">
+                <input type="radio"
+                        id="gill-spacing-c"
+                        name="gill-spacing"
+                        value="0">Close</input>
+            </label>
+            <label for="gill-spacing-w">
+                <input type="radio"
+                        id="gill-spacing-w"
+                        name="gill-spacing"
+                        value="1">Crowded</input>
+            </label>
+            <label for="gill-spacing-d">
+                <input type="radio"
+                        id="gill-spacing-d"
+                        name="gill-spacing"
+                        value="2">Distant</input>
+            </label>
+
+        </div>
+      
+        <!-- Gill Size -->
+        <div class="form-control">
+            <label>
+                Gill Size:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="gill-size-b">
+                <input type="radio"
+                        id="gill-size-b"
+                        name="gill-size"
+                        value="0">Broad</input>
+            </label>
+            <label for="gill-size-n">
+                <input type="radio"
+                        id="gill-size-n"
+                        name="gill-size"
+                        value="1">Narrow</input>
+            </label>
+
+        </div>
+
+        <!-- Gill Color -->
+        <div class="form-control">
+            <label>
+                Gill Color:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="gill-color-k">
+                <input type="radio"
+                        id="gill-color-k"
+                        name="gill-color"
+                        value="0">Black</input>
+            </label>
+            <label for="gill-color-n">
+                <input type="radio"
+                        id="gill-color-n"
+                        name="gill-color"
+                        value="1">Brown</input>
+            </label>
+            <label for="gill-color-b">
+                <input type="radio"
+                        id="gill-color-b"
+                        name="gill-color"
+                        value="2">Buff</input>
+            </label>
+            <label for="gill-color-h">
+                <input type="radio"
+                        id="gill-color-h"
+                        name="gill-color"
+                        value="3">Chocolate</input>
+            </label>
+            <label for="gill-color-g">
+                <input type="radio"
+                        id="gill-color-g"
+                        name="gill-color"
+                        value="4">Gray</input>
+            </label>
+            <label for="gill-color-r">
+                <input type="radio"
+                        id="gill-color-r"
+                        name="gill-color"
+                        value="5">Green</input>
+            </label>
+            <label for="gill-color-o">
+                <input type="radio"
+                        id="gill-color-o"
+                        name="gill-color"
+                        value="6">Orange</input>
+            </label>
+            <label for="gill-color-p">
+                <input type="radio"
+                        id="gill-color-p"
+                        name="gill-color"
+                        value="7">Pink</input>
+            </label>
+            <label for="gill-color-u">
+                <input type="radio"
+                        id="gill-color-u"
+                        name="gill-color"
+                        value="8">Purple</input>
+            </label>
+            <label for="gill-color-e">
+                <input type="radio"
+                        id="gill-color-e"
+                        name="gill-color"
+                        value="9">Red</input>
+            </label>
+            <label for="gill-color-w">
+                <input type="radio"
+                        id="gill-color-w"
+                        name="gill-color"
+                        value="10">White</input>
+            </label>
+            <label for="gill-color-y">
+                <input type="radio"
+                        id="gill-color-y"
+                        name="gill-color"
+                        value="11">Yellow</input>
+            </label>
+
+        </div>
+        
+        <!-- Stalk Shape -->
+        <div class="form-control">
+            <label>
+                Stalk Shape:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="stalk-shape-t">
+                <input type="radio"
+                        id="stalk-shape-t"
+                        name="stalk-shape"
+                        value="0">Tapering</input>
+            </label>
+            <label for="stalk-shape-e">
+                <input type="radio"
+                        id="stalk-shape-e"
+                        name="stalk-shape"
+                        value="1">Enlarging</input>
+            </label>
+
+        </div>
+
+        <!-- Stalk Root -->
+        <div class="form-control">
+            <label>
+                Stalk Root:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="stalk-root-e">
+                <input type="radio"
+                        id="stalk-root-e"
+                        name="stalk-root"
+                        value="0">Equal</input>
+            </label>
+            <label for="stalk-root-c">
+                <input type="radio"
+                        id="stalk-root-c"
+                        name="stalk-root"
+                        value="1">Club</input>
+            </label>
+            <label for="stalk-root-b">
+                <input type="radio"
+                        id="stalk-root-b"
+                        name="stalk-root"
+                        value="2">Bulbous</input>
+            </label>
+            <label for="stalk-root-r">
+                <input type="radio"
+                        id="stalk-root-r"
+                        name="stalk-root"
+                        value="3">Rooted</input>
+            </label>
+            <label for="stalk-root-?">
+                <input type="radio"
+                        id="stalk-root-?"
+                        name="stalk-root"
+                        value="4">Missing</input>
+            </label>
+
+        </div>
+
+        <!-- Stalk Surface Above Ring -->
+        <div class="form-control">
+            <label>
+                Stalk Surface Above Ring:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="stalk-surface-above-ring-f">
+                <input type="radio"
+                        id="stalk-surface-above-ring-f"
+                        name="stalk-surface-above-ring"
+                        value="0">Fibrous</input>
+            </label>
+            <label for="stalk-surface-above-ring-y">
+                <input type="radio"
+                        id="stalk-surface-above-ring-y"
+                        name="stalk-surface-above-ring"
+                        value="1">Scaly</input>
+            </label>
+            <label for="stalk-surface-above-ring-k">
+                <input type="radio"
+                        id="stalk-surface-above-ring-k"
+                        name="stalk-surface-above-ring"
+                        value="2">Sliky</input>
+            </label>
+            <label for="stalk-surface-above-ring-s">
+                <input type="radio"
+                        id="stalk-surface-above-ring-s"
+                        name="stalk-surface-above-ring"
+                        value="3">Smooth</input>
+            </label>
+
+        </div>
+
+        <!-- Stalk Surface Below Ring -->
+        <div class="form-control">
+            <label>
+                Stalk Surface Below Ring:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="stalk-surface-below-ring-f">
+                <input type="radio"
+                        id="stalk-surface-below-ring-f"
+                        name="stalk-surface-below-ring"
+                        value="0">Fibrous</input>
+            </label>
+            <label for="stalk-surface-below-ring-y">
+                <input type="radio"
+                        id="stalk-surface-below-ring-y"
+                        name="stalk-surface-below-ring"
+                        value="1">Scaly</input>
+            </label>
+            <label for="stalk-surface-below-ring-k">
+                <input type="radio"
+                        id="stalk-surface-below-ring-k"
+                        name="stalk-surface-below-ring"
+                        value="2">Sliky</input>
+            </label>
+            <label for="stalk-surface-below-ring-s">
+                <input type="radio"
+                        id="stalk-surface-below-ring-s"
+                        name="stalk-surface-below-ring"
+                        value="3">Smooth</input>
+            </label>
+
+        </div>
+
+        <!-- Stalk Color Above Ring -->
+        <div class="form-control">
+            <label>
+                Stalk Color Above Ring:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="stalk-color-above-ring-n">
+                <input type="radio"
+                        id="stalk-color-above-ring-n"
+                        name="stalk-color-above-ring"
+                        value="0">Brown</input>
+            </label>
+            <label for="stalk-color-above-ring-b">
+                <input type="radio"
+                        id="stalk-color-above-ring-b"
+                        name="stalk-color-above-ring"
+                        value="1">Buff</input>
+            </label>
+            <label for="stalk-color-above-ring-c">
+                <input type="radio"
+                        id="stalk-color-above-ring-c"
+                        name="stalk-color-above-ring"
+                        value="2">Cinnamon</input>
+            </label>
+            <label for="stalk-color-above-ring-g">
+                <input type="radio"
+                        id="stalk-color-above-ring-g"
+                        name="stalk-color-above-ring"
+                        value="3">Gray</input>
+            </label>
+            <label for="stalk-color-above-ring-o">
+                <input type="radio"
+                        id="stalk-color-above-ring-o"
+                        name="stalk-color-above-ring"
+                        value="4">Orange</input>
+            </label>
+            <label for="stalk-color-above-ring-p">
+                <input type="radio"
+                        id="stalk-color-above-ring-p"
+                        name="stalk-color-above-ring"
+                        value="5">Pink</input>
+            </label>
+            <label for="stalk-color-above-ring-e">
+                <input type="radio"
+                        id="stalk-color-above-ring-e"
+                        name="stalk-color-above-ring"
+                        value="6">Red</input>
+            </label>
+            <label for="stalk-color-above-ring-w">
+                <input type="radio"
+                        id="stalk-color-above-ring-w"
+                        name="stalk-color-above-ring"
+                        value="7">White</input>
+            </label>
+            <label for="stalk-color-above-ring-y">
+                <input type="radio"
+                        id="stalk-color-above-ring-y"
+                        name="stalk-color-above-ring"
+                        value="8">Yellow</input>
+            </label>
+
+        </div>
+
+        <!-- Stalk Color Below Ring -->
+        <div class="form-control">
+            <label>
+                Stalk Color Below Ring:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="stalk-color-below-ring-n">
+                <input type="radio"
+                        id="stalk-color-below-ring-n"
+                        name="stalk-color-below-ring"
+                        value="0">Brown</input>
+            </label>
+            <label for="stalk-color-below-ring-b">
+                <input type="radio"
+                        id="stalk-color-below-ring-b"
+                        name="stalk-color-below-ring"
+                        value="1">Buff</input>
+            </label>
+            <label for="stalk-color-below-ring-c">
+                <input type="radio"
+                        id="stalk-color-below-ring-c"
+                        name="stalk-color-below-ring"
+                        value="2">Cinnamon</input>
+            </label>
+            <label for="stalk-color-below-ring-g">
+                <input type="radio"
+                        id="stalk-color-below-ring-g"
+                        name="stalk-color-below-ring"
+                        value="3">Gray</input>
+            </label>
+            <label for="stalk-color-below-ring-o">
+                <input type="radio"
+                        id="stalk-color-below-ring-o"
+                        name="stalk-color-below-ring"
+                        value="4">Orange</input>
+            </label>
+            <label for="stalk-color-below-ring-p">
+                <input type="radio"
+                        id="stalk-color-below-ring-p"
+                        name="stalk-color-below-ring"
+                        value="5">Pink</input>
+            </label>
+            <label for="stalk-color-below-ring-e">
+                <input type="radio"
+                        id="stalk-color-below-ring-e"
+                        name="stalk-color-below-ring"
+                        value="6">Red</input>
+            </label>
+            <label for="stalk-color-below-ring-w">
+                <input type="radio"
+                        id="stalk-color-below-ring-w"
+                        name="stalk-color-below-ring"
+                        value="7">White</input>
+            </label>
+            <label for="stalk-color-below-ring-y">
+                <input type="radio"
+                        id="stalk-color-below-ring-y"
+                        name="stalk-color-below-ring"
+                        value="8">Yellow</input>
+            </label>
+
+        </div>
+
+        <!-- Veil Type -->
+        <div class="form-control">
+            <label>
+                Veil Type:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="veil-type-p">
+                <input type="radio"
+                        id="veil-type-p"
+                        name="veil-type"
+                        value="0">Partial</input>
+            </label>
+            <label for="veil-type-u">
+                <input type="radio"
+                        id="veil-type-u"
+                        name="veil-type"
+                        value="1">Universal</input>
+            </label>
+
+        </div>
+
+        <!-- Veil Color -->
+        <div class="form-control">
+            <label>
+                Veil Color:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="veil-color-n">
+                <input type="radio"
+                        id="veil-color-n"
+                        name="veil-color"
+                        value="0">Brown</input>
+            </label>
+            <label for="veil-color-o">
+                <input type="radio"
+                        id="veil-color-o"
+                        name="veil-color"
+                        value="1">Orange</input>
+            </label>
+            <label for="veil-color-w">
+                <input type="radio"
+                        id="veil-color-w"
+                        name="veil-color"
+                        value="2">White</input>
+            </label>
+            <label for="veil-color-y">
+                <input type="radio"
+                        id="veil-color-y"
+                        name="veil-color"
+                        value="3">Yellow</input>
+            </label>
+
+        </div>
+
+        <!-- Ring Number -->
+        <div class="form-control">
+            <label>
+                Ring Number:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="ring-number-n">
+                <input type="radio"
+                        id="ring-number-n"
+                        name="ring-number"
+                        value="0">None</input>
+            </label>
+            <label for="ring-number-o">
+                <input type="radio"
+                        id="ring-number-o"
+                        name="ring-number"
+                        value="1">1</input>
+            </label>
+            <label for="ring-number-t">
+                <input type="radio"
+                        id="ring-number-t"
+                        name="ring-number"
+                        value="2">2</input>
+            </label>
+
+        </div>
+
+        <!-- Ring Type -->
+        <div class="form-control">
+            <label>
+                Ring Type:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="ring-type-c">
+                <input type="radio"
+                        id="ring-type-c"
+                        name="ring-type"
+                        value="0">Cobwebby</input>
+            </label>
+            <label for="ring-type-e">
+                <input type="radio"
+                        id="ring-type-e"
+                        name="ring-type"
+                        value="1">Evanescent</input>
+            </label>
+            <label for="ring-type-f">
+                <input type="radio"
+                        id="ring-type-f"
+                        name="ring-type"
+                        value="2">Flaring</input>
+            </label>
+            <label for="ring-type-l">
+                <input type="radio"
+                        id="ring-type-l"
+                        name="ring-type"
+                        value="3">Large</input>
+            </label>
+            <label for="ring-type-n">
+                <input type="radio"
+                        id="ring-type-n"
+                        name="ring-type"
+                        value="4">None</input>
+            </label>
+            <label for="ring-type-p">
+                <input type="radio"
+                        id="ring-type-p"
+                        name="ring-type"
+                        value="5">Pendant</input>
+            </label>
+            <label for="ring-type-s">
+                <input type="radio"
+                        id="ring-type-s"
+                        name="ring-type"
+                        value="6">Sheathing</input>
+            </label>
+            <label for="ring-type-z">
+                <input type="radio"
+                        id="ring-type-z"
+                        name="ring-type"
+                        value="7">Zone</input>
+            </label>
+
+        </div>
+
+        <!-- Spore Print Color -->
+        <div class="form-control">
+            <label>
+                Spore Print Color:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="spore-print-color-k">
+                <input type="radio"
+                        id="spore-print-color-k"
+                        name="spore-print-color"
+                        value="0">Black</input>
+            </label>
+            <label for="spore-print-color-n">
+                <input type="radio"
+                        id="spore-print-color-n"
+                        name="spore-print-color"
+                        value="1">Brown</input>
+            </label>
+            <label for="spore-print-color-b">
+                <input type="radio"
+                        id="spore-print-color-b"
+                        name="spore-print-color"
+                        value="2">Buff</input>
+            </label>
+            <label for="spore-print-color-h">
+                <input type="radio"
+                        id="spore-print-color-h"
+                        name="spore-print-color"
+                        value="3">Chocolate</input>
+            </label>
+            <label for="spore-print-color-r">
+                <input type="radio"
+                        id="spore-print-color-r"
+                        name="spore-print-color"
+                        value="4">Green</input>
+            </label>
+            <label for="spore-print-color-o">
+                <input type="radio"
+                        id="spore-print-color-o"
+                        name="spore-print-color"
+                        value="5">Orange</input>
+            </label>
+            <label for="spore-print-color-u">
+                <input type="radio"
+                        id="spore-print-color-u"
+                        name="spore-print-color"
+                        value="6">Purple</input>
+            </label>
+            <label for="spore-print-color-w">
+                <input type="radio"
+                        id="spore-print-color-w"
+                        name="spore-print-color"
+                        value="7">White</input>
+            </label>
+            <label for="spore-print-color-y">
+                <input type="radio"
+                        id="spore-print-color-y"
+                        name="spore-print-color"
+                        value="8">Yellow</input>
+            </label>
+
+        </div>
+
+        <!-- Population -->
+        <div class="form-control">
+            <label>
+                Population:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="population-a">
+                <input type="radio"
+                        id="population-a"
+                        name="population"
+                        value="0">Abundant</input>
+            </label>
+            <label for="population-c">
+                <input type="radio"
+                        id="population-c"
+                        name="population"
+                        value="1">Clustered</input>
+            </label>
+            <label for="population-n">
+                <input type="radio"
+                        id="population-n"
+                        name="population"
+                        value="2">Numerous</input>
+            </label>
+            <label for="population-s">
+                <input type="radio"
+                        id="population-s"
+                        name="population"
+                        value="3">Scattered</input>
+            </label>
+            <label for="population-v">
+                <input type="radio"
+                        id="population-v"
+                        name="population"
+                        value="4">Several</input>
+            </label>
+            <label for="population-y">
+                <input type="radio"
+                        id="population-y"
+                        name="population"
+                        value="5">Solitary</input>
+            </label>
+
+        </div>
+
+        <!-- Habitat -->
+        <div class="form-control">
+            <label>
+                Habitat:
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="habitat-g">
+                <input type="radio"
+                        id="habitat-g"
+                        name="habitat"
+                        value="0">Grasses</input>
+            </label>
+            <label for="habitat-l">
+                <input type="radio"
+                        id="habitat-l"
+                        name="habitat"
+                        value="1">Leaves</input>
+            </label>
+            <label for="habitat-m">
+                <input type="radio"
+                        id="habitat-m"
+                        name="habitat"
+                        value="2">Meadows</input>
+            </label>
+            <label for="habitat-p">
+                <input type="radio"
+                        id="habitat-p"
+                        name="habitat"
+                        value="3">Paths</input>
+            </label>
+            <label for="habitat-u">
+                <input type="radio"
+                        id="habitat-u"
+                        name="habitat"
+                        value="4">Urban</input>
+            </label>
+            <label for="habitat-w">
+                <input type="radio"
+                        id="habitat-w"
+                        name="habitat"
+                        value="5">Waste</input>
+            </label>
+            <label for="habitat-d">
+                <input type="radio"
+                        id="habitat-d"
+                        name="habitat"
+                        value="6">Woods</input>
+            </label>
+
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button id= "btn" type="submit" value="submit">
+            Submit
+        </button>
+
+        <!-- Result -->
+        <div class="form-control">
+            <label for="result" id="label-result">
+                Result: <div id="mushroom-result"></div>
+            </label>
+        </div>
+
+        <!-- App Script -->
+        <script type="text/javascript" src="static/js/app.js"></script>
+
+
+    </form>
+</body>
+</html>
